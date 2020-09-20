@@ -1,0 +1,157 @@
+doctype html
+html(lang="en-US")
+    head
+        title= "OxiClips"
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="description" content="template")
+        <link href="https://allfont.ru/allfont.css?fonts=sansation-light" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        link(rel="stylesheet" href="./css/remove.css")
+        link(rel="stylesheet" href="./css/style.css")
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    body
+        main.main
+            section.promo
+                header.header.promo__header
+                    .header__inner
+                        .logo.promo__logo
+                            | OXI
+                .promo__inner
+                    picture.promo__background-image 
+                        source(srcset="./images/clips/background.png")
+                        img(src="./images/clips/background.png", alt="clips background")     
+                    .promo__text
+                        h1.promo__title
+                            | Oxi Clips
+                        p.promo__subtitle
+                            | Concepts for realife  
+            section.about
+                .about__inner      
+                    .about__wrapper
+                        article.about__article.article(data-aos="fade-up") 
+                            picture
+                                source(srcset="./images/icons/Decor.png")
+                                img(src="./images/icons/Decor.png", alt="decor")
+                            h1.article__title(data-aos="fade-up" data-aos-delay="150") 
+                                | Stress control
+                            p.article__text(data-aos="fade-up" data-aos-delay="200").
+                                    Stress is detrimental to a person, especially if it has a chronic form.
+                                    We analyze the stress level through your heartbeat. Heart rate variability
+                                    (which is NOT your heart rate) is a method that has been used in
+                                    healthcare and professional sports for decades.  
+                            nav.article__tags.tag
+                                ul.tag__tags
+                                    li.tag__tags-list(data-aos="fade-right" data-aos-delay="200") 
+                                        | Stress Index
+                                    li.tag__tags-list(data-aos="fade-right" data-aos-delay="250") 
+                                        | Cardiac Aging
+                                    li.tag__tags-list(data-aos="fade-right" data-aos-delay="300") 
+                                        | Adaptation Level
+                                    li.tag__tags-list(data-aos="fade-right" data-aos-delay="350") 
+                                        | Pulse
+                                    li.tag__tags-list(data-aos="fade-right" data-aos-delay="400") 
+                                        | HRV           
+
+                                                              
+                        .about__phone(data-aos="fade-left" data-aos-delay="400") 
+                            picture.about__phone-image
+                                source(srcset="./images/mockups/stress.png")
+                                img(src="./images/mockups/stress.png", alt="Stress presentation") 
+                            picture.about__background-image.about__background-image_right
+                                source(srcset="./images/icons/Group.png")
+                                img(src="./images/icons/Group.png", alt="Group icon")               
+                    .about__wrapper.about__wrapper_reversed
+                        article.about__article.article(data-aos="fade-up") 
+                            picture
+                                source(srcset="./images/icons/Decor.png")
+                                img(src="./images/icons/Decor.png", alt="decor")
+                            h1.article__title(data-aos="fade-up" data-aos-delay="150") 
+                                | Health monitor
+                            p.article__text(data-aos="fade-up" data-aos-delay="200").
+                                    When it comes to our health, prevention is much better than cure.
+                                    Several diseases and injuries are preventable,and can be managed much better if identified earlier on.
+                                    Health monitor, it’s the trend that matters, not a single reading.
+                            nav.article__tags.tag
+                                ul.tag__tags
+                                    li.tag__tags-list(data-aos="fade-left" data-aos-delay="200") 
+                                        | Blood Glucose
+                                    li.tag__tags-list(data-aos="fade-left" data-aos-delay="250") 
+                                        | Blood Pressure
+                                    li.tag__tags-list(data-aos="fade-left" data-aos-delay="300") 
+                                        | Oxygen Saturation
+                                    li.tag__tags-list(data-aos="fade-left" data-aos-delay="250") 
+                                        | Wellness               
+                        .about__phone(data-aos="fade-right" data-aos-delay="400") 
+                            picture.about__phone-image
+                                source(srcset="./images/mockups/glucose.png")
+                                img(src="./images/mockups/glucose.png", alt="Glucose presentation") 
+                            picture.about__background-image.about__background-image_left
+                                source(srcset="./images/icons/Vector.png")
+                                img(src="./images/icons/Vector.png", alt="vector for section")                           
+            section.product
+                .product__inner
+                    article.product__article.article(data-aos="fade-right" data-aos-delay="400") 
+                        h1.article__title
+                            | Innovations in a small package
+                        p.article__text.
+                             Oxi Clip packed with infrared LEDs, and highlycompact multi-wavelength photoplethysmography.
+                             The earlobe is much more suitable for optical measurements because it offers an area where blood flows neatly in and out, providing a much stronger signal and less noise. And because we don’t move our ears as much as our arms, it can be easier to sort out intentional motions from unintentional ones.
+                             Oxi Clip has a three-day battery life. 
+                    .courusel(data-aos="zoom-in" data-aos-delay="800") 
+                        .courusel__inner
+                            .courusel__list
+                                picture
+                                    source(srcset="./images/clips/black.png")
+                                    img(src="./images/clips/black.png", alt="Black clips").courusel__list-image
+                                picture
+                                    source(srcset="./images/clips/green.png")
+                                    img(src="./images/clips/green.png", alt="Green clips").courusel__list-image  
+                                picture
+                                    source(srcset="./images/clips/white.png")
+                                    img(src="./images/clips/white.png", alt="White clips").courusel__list-image            
+                        nav.courusel__controls
+                            ul.courusel__controls-ul
+                                li.courusel__controls-list
+                                    label.courusel__controls-label
+                                        input(name="photo" type="radio" checked).courusel__controls-input
+                                        span.courusel__controls-span.courusel__controls-span_hovered
+                                            | Black
+                                li.courusel__controls-list
+                                    label.courusel__controls-label
+                                        input(name="photo" type="radio").courusel__controls-input
+                                        span.courusel__controls-span.courusel__controls-span_hovered
+                                            | Green
+                                li.courusel__controls-list
+                                    label.courusel__controls-label
+                                        input(name="photo" type="radio").courusel__controls-input
+                                        span.courusel__controls-span.courusel__controls-span_hovered
+                                            | White
+            section.feedback
+                .feedback__inner 
+                    header.feedback__header
+                        h1.feedback__title
+                            | Sign up to receive early bird discounts on launch day
+                        form(action="#").feedback__form
+                            input(type="email" placeholder="Example@gmail.com").feedback__form-mail
+                            input(type="submit" value="Sign Up").feedback__form-btn 
+                    footer.feedback__footer.footer
+                        .footer__inner
+                            nav.footer__nav
+                                ul.footer__nav-ul
+                                    li.footer__list(data-title="MAIL") 
+                                        p.
+                                            hello@oxiclip.com 
+                                    li.footer__list(data-title="PRIVACY")
+                                        a(href="#").footer__list-link.footer__list-link_hovered
+                                            | Privacy
+                                    li.footer__list 
+                                        p.
+                                            © 2020 Oxi. All Rights Reserved. 
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        script(src="./js/animations.js")
+        script(src="./js/validate.js")  
+        script(src="./js/modal.js")                                     

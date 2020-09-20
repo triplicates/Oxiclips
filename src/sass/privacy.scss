@@ -1,0 +1,114 @@
+@import "vars";
+.privacy {
+  @extend %font-montserrat_regular;
+  background: #0f1012;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  &__inner {
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__upper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__close {
+    color: $second-color;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: color 0.4s;
+    &:hover {
+      cursor: pointer;
+      color: rgb(179, 179, 179);
+    }
+  }
+  &__title {
+    @extend %font-montserrat_regular;
+    color: $first-color;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    color: $second-color;
+  }
+  &__information {
+    @extend %font-montserrat_light;
+    color: $first-color;
+    position: relative;
+    width: 900px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -40px;
+      width: 2px;
+      height: 100%;
+      background: #55cf9c;
+    }
+  }
+  &__information-ul {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  &__information-list {
+    margin-top: 20px;
+  }
+  &__information-text {
+  }
+  &__footer {
+    color: $second-color;
+    text-align: center;
+    width: 900px;
+  }
+}
+.privacy_display_hide {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .privacy {
+    &__upper {
+      margin-top: 40px;
+    }
+    &__information {
+      position: relative;
+      width: 100%;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        width: 2px;
+        height: 100%;
+        background: #55cf9c;
+      }
+    }
+    &__information-list {
+      margin-left: 10px;
+    }
+    &__title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    &__subtitle {
+      text-align: center;
+      font-size: 12px;
+    }
+    &__information-text {
+      font-size: 12px;
+    }
+    &__footer {
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+%flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flex-align_center {
+  display: flex;
+  align-items: center;
+}
+
+// [fonts] Montserrat
+%font-montserrat_thin {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+%font-montserrat_light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+%font-montserrat_regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+%font-montserrat_medium {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+%font-montserrat_bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+// [container]
+
+%container-inner {
+  margin: 0 auto;
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  height: 100%;
+}

@@ -1,0 +1,79 @@
+.courusel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  &__inner {
+    overflow: hidden;
+    width: 300px;
+  }
+  &__list {
+    display: flex;
+    flex-flow: row nowrap;
+    transition: transform 0.3s;
+    width: 100%;
+    height: 100%;
+  }
+  &__list-image {
+    min-width: 300px;
+  }
+  &__controls {
+    margin-top: 40px;
+  }
+  &__controls-ul {
+    display: flex;
+  }
+  &__controls-input {
+    position: relative;
+    appearance: none;
+  }
+  &__controls-span {
+    @extend %font-montserrat_regular;
+    font-size: 14px;
+    color: #aaaaaa;
+    letter-spacing: 1px;
+  }
+  &__controls-span {
+    position: relative;
+    transition: color 0.4s;
+    &:hover {
+      cursor: pointer;
+      color: $first-color;
+    }
+  }
+  &__controls-input:checked + &__controls-span {
+    color: $first-color;
+    &:after {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 2px;
+      border-radius: 2px;
+      background: $main-green;
+      content: "";
+      animation: show 0.4s forwards;
+    }
+  }
+}
+@keyframes show {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .courusel {
+    &__inner {
+      width: 240px;
+    }
+    &__list-image {
+      min-width: 240px;
+    }
+  }
+}
