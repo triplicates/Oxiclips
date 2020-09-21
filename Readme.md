@@ -11,7 +11,7 @@ My design for the oxiclips site.
 
 #### <h3 style="text-align: center" /> Figma
 
-Link to project [oxiclips](https://www.figma.com/fileAmCnFhGS4aD0l0o49znWKF/OxiClip?node-id=1127%3A2)
+Link to project [oxiclips](https://www.figma.com/file/AmCnFhGS4aD0l0o49znWKF/OxiClip?node-id=0%3A1)
 
 <img style="text-align: center;"  src="./images/readme/shot.png">
 
