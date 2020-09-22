@@ -23,4 +23,4 @@ Development - 8 hours
 
 #### Author
 
-(c) Danil Sergeev | telegram @triplicatesouls@gmail.com
+(c) Danil Sergeev | telegram @triplicatesouls
