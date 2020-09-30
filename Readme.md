@@ -9,11 +9,13 @@ My design for the oxiclips site.
     * CSS
     * UI
 
-#### <h3 style="text-align: center" /> Figma
+#### Figma
 
 Link to project [oxiclips](https://www.figma.com/file/AmCnFhGS4aD0l0o49znWKF/OxiClip?node-id=0%3A1)
 
-<img style="text-align: center;"  src="./images/readme/shot.png">
+See this work: [link to github pages](https://triplicates.github.io/Oxiclips/)
+
+<img src="./images/readme/shot.png">
 
 #### 🕐 Time
 
