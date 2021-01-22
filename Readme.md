@@ -2,13 +2,6 @@
 
 My design for the oxiclips site.
 
-    This work shows my skills at the moment
-    such technologies as:
-
-    * HTML5
-    * CSS
-    * UI
-
 #### Figma
 
 Link to project [oxiclips](https://www.figma.com/file/AmCnFhGS4aD0l0o49znWKF/OxiClip?node-id=0%3A1)
